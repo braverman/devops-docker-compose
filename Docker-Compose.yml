@@ -8,8 +8,8 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - POSTGRES_DB=${{ vars.POSTGRES_DB }}
-      - POSTGRES_USER=${{ vars.POSTGRES_USER }}
+      - POSTGRES_DB=testdb
+      - POSTGRES_USER=dbuser
       - POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}
 
   web:
